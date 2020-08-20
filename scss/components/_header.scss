@@ -1,0 +1,22 @@
+
+header {
+    height: 150px;
+    padding: 1em 0;
+    background: linear-gradient($backgrounds, transparent 90%),
+    linear-gradient(0deg, $backgrounds, transparent),
+    url("../images/coding.jpg") no-repeat center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @include flex-col;
+    justify-content: flex-end;
+    & h2,
+    & p {
+        color: $white;
+        padding-left: 5%;
+    }  
+   & p {
+       margin: .1em 0 .4em 1.5em;
+   }
+}

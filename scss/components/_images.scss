@@ -1,0 +1,33 @@
+
+.logo img {
+    width: 100px;
+    border: 6px solid $white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.logo {
+    position: relative;
+    
+}
+
+// FIRST SECTION
+
+.introduction-social img {
+    width: 32px;
+    margin-top: .8em;
+}
+
+
+.block-1 a ~ img {
+    width: 16px;
+    position: absolute;
+    left: 33%;
+    top: 35%;
+    
+}
