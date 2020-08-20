@@ -23,11 +23,13 @@
     margin-top: .8em;
 }
 
-
-.block-1 a ~ img {
-    width: 16px;
-    position: absolute;
-    left: 33%;
-    top: 35%;
+.contact,
+.follow {
+    position: relative;
+    border: 1px solid red;
     
+}
+.message ~ img {
+    position: absolute;
+    width: 18px;
 }
