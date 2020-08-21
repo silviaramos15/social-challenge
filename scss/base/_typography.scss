@@ -4,14 +4,21 @@
 }
 
 body {
+    max-width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
     font-size: 14px;
+    @media (min-width: $break-m) {
+        font-size: $font-lg;
+    }
 }
 p {
     font-size: $font-small;
+    @media (min-width: $break-m) {
+        font-size: $font-med;
+    }
 }
 span {
     color: $background-dark;

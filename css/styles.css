@@ -1,6 +1,7 @@
 .links {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .links button {
   width: 30%;
@@ -15,6 +16,10 @@
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 .main-section .logo img {
   width: 100px;
   border: 6px solid #fff;
@@ -25,6 +30,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
+@media (min-width: 768px) {
+  .main-section .logo img {
+    width: 150px;
+    top: -65px;
+  }
+}
 
 .main-section .logo {
   position: relative;
@@ -34,6 +45,11 @@
   width: 32px;
   margin-top: 0.9em;
 }
+@media (min-width: 768px) {
+  .introduction-social img {
+    width: 42px;
+  }
+}
 
 .contact,
 .follow {
@@ -42,9 +58,15 @@
 
 .message ~ img {
   position: absolute;
-  width: 20px;
+  width: 16px;
   left: 80%;
   top: 35%;
+}
+@media (min-width: 768px) {
+  .message ~ img {
+    top: 43%;
+    left: 85%;
+  }
 }
 
 .twitts .logo img {
@@ -59,39 +81,23 @@
   display: block;
   margin: 0 auto;
 }
-
-.icons,
-.icons-con,
-.icon-numbers {
-  display: flex;
+@media (min-width: 768px) {
+  .post img {
+    width: 320px;
+  }
 }
 
-.icons {
-  flex-direction: column;
-  margin-top: 15px;
-}
-.icons p {
-  width: 34px;
-  font-size: 6px;
-  padding: 0em 1em 0em 0.3em;
+footer img {
+  height: 28px;
 }
 
-.icon-numbers {
-  margin-left: 19px;
+@media (min-width: 768px) {
+  .twitts .logo img {
+    width: 100px;
+    display: inline-block;
+    border: 1px solid red;
+  }
 }
-
-.icon-numbers p:last-of-type {
-  margin-left: 4px;
-}
-
-.icon-con {
-  margin-top: -9px;
-}
-.icon-con img {
-  width: 32px;
-  padding: 0em 0.8em 0em 0.3em;
-}
-
 header {
   height: 150px;
   padding: 1em 0;
@@ -111,18 +117,25 @@ header h2, header p {
 header p {
   margin: 0.1em 0 0.4em 1.5em;
 }
+@media (min-width: 768px) {
+  header {
+    height: 220px;
+  }
+}
 
 main {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  main {
+    width: 80%;
+  }
 }
 
 .introduction-social {
   width: 90%;
   margin: 0 auto;
-}
-
-.introduction-social {
   display: flex;
   justify-content: space-between;
 }
@@ -130,7 +143,7 @@ main {
   display: flex;
 }
 .introduction-social ol li:first-child {
-  padding-right: 20px;
+  padding-right: 5px;
 }
 
 .block-1 {
@@ -144,7 +157,13 @@ main {
   font-size: 10px;
   border: 1px solid #eaeaea;
   background-color: #eaeaea;
-  padding: 0.8em 4.4em 1.3em 1em;
+  padding: 0.7em 4em 0.7em 1em;
+}
+@media (min-width: 768px) {
+  .block-1 a {
+    font-size: 16px;
+    margin: 2.5em 0;
+  }
 }
 
 .block-2 {
@@ -161,6 +180,12 @@ main {
 
 .twitts {
   margin-top: 0.9em;
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .twitts {
+    width: 100%;
+  }
 }
 
 .twitts .logo {
@@ -169,6 +194,7 @@ main {
 
 .twitts {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .content {
@@ -190,6 +216,83 @@ main {
 
 .post p {
   margin: 1.2em 0.5em;
+}
+
+.card-interaction {
+  display: flex;
+  margin-top: 0.9em;
+  margin-left: 0.7em;
+}
+
+.chat-div,
+.repost-div,
+.heart-div {
+  padding-right: 8px;
+  position: relative;
+}
+.chat-div img,
+.repost-div img,
+.heart-div img {
+  height: 12px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .chat-div img,
+.repost-div img,
+.heart-div img {
+    height: 16px;
+    padding-right: 15px;
+  }
+}
+.chat-div p,
+.repost-div p,
+.heart-div p {
+  font-size: 6px;
+  position: absolute;
+  left: 12px;
+}
+@media (min-width: 768px) {
+  .chat-div p,
+.repost-div p,
+.heart-div p {
+    font-size: 8px;
+    left: 20px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #184b5c;
+}
+
+.footer-icons {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-icons ol {
+  display: flex;
+  align-items: center;
+}
+.footer-icons ol li:first-child {
+  padding-right: 45px;
+}
+.footer-icons ol li {
+  align-self: center;
+}
+
+.plus {
+  position: relative;
+}
+.plus img {
+  height: 38px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -557,15 +660,26 @@ template {
 }
 
 body {
+  max-width: 100%;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 h2 {
   font-size: 14px;
 }
+@media (min-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+}
 
 p {
   font-size: 10px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 span {

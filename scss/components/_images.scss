@@ -1,4 +1,6 @@
-
+img {
+    max-width: 100%;
+}
 .main-section .logo img {
     width: 100px;
     @include logo;
@@ -6,7 +8,10 @@
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-
+    @media (min-width: $break-m) {
+        width: 150px;
+        top: -65px;
+    }
 }
 
 .main-section .logo {
@@ -19,6 +24,9 @@
 .introduction-social img {
     width: 32px;
     margin-top: $margin-top;
+    @media (min-width: $break-m) {
+        width: 42px;
+    }
 }
 
 .contact,
@@ -28,9 +36,13 @@
 }
 .message ~ img {
     position: absolute;
-    width: 20px;
+    width: 16px;
     left: 80%;
     top: 35%;
+    @media (min-width: $break-m) {
+        top: 43%;
+        left: 85%;
+    }
 }
 
 // SECOND SECTION - TWITTS
@@ -44,36 +56,13 @@
     width: 250px;
     display: block;
     margin: 0 auto;
-}
-
-.icons,
-.icons-con,
-.icon-numbers {
-    display: flex; 
-   
-}
-.icons {
-    flex-direction: column;
-    margin-top: 15px;
-    p {
-     width: 34px;
-     font-size: $font-xs;
-    padding: 0em 1em 0em .3em;
+    
+    @media (min-width: $break-m) {
+        width: 320px;
     }
-    
-}
-.icon-numbers {
-    margin-left: 19px;
-    
-}
-.icon-numbers p:last-of-type {
-    margin-left: 4px;
+
 }
 
-.icon-con {
-    margin-top: -9px;
-    img {
-    width: 32px;
-    padding: 0em .8em 0em .3em 
-}
+footer img {
+    height: 28px;
 }

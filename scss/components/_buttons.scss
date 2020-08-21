@@ -1,6 +1,7 @@
 
 .links {
     @include flex-just-betw;
+    margin-bottom: 30px;
     & button {
         width: 30%;
         padding: .3em 0;
