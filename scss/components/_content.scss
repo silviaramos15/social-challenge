@@ -21,8 +21,7 @@ main {
 
 .block-1 {
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+   @include flex-just-betw;
    
     & a {
         margin: 1.5em 0;
@@ -30,7 +29,50 @@ main {
         font-size: $font-small;
         border: 1px solid  $background;
         background-color:  $background;
-        padding: .8em 4em 1.3em 1em; 
+        padding: .8em 4.4em 1.3em 1em; 
         
     }
 }
+
+.block-2 {
+    @include text;
+    border-bottom: 1px solid $background;
+    padding-bottom: 1.5em;
+    & a {
+    color:  #68bcd8;
+    }
+    & p:first-of-type {
+    padding-bottom: 10px;
+    }
+}
+
+// SECOND BLOCK - TWITTS
+
+.twitts {
+    margin-top: $margin-top;
+    
+    }
+.twitts .logo {
+    width: 20%;
+ 
+}
+.twitts {
+    display: flex;
+    
+}
+.content {
+    width: 90%;
+    padding: 10px 5px;
+  @include cards;
+}
+.head {
+    @include flex-just-around;
+    & p:first-of-type {
+        font-size: 18px;
+        color: $background-dark;
+    }
+}
+.post p {
+    margin: 1.2em .5em;
+}
+

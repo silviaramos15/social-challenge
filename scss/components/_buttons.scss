@@ -1,0 +1,16 @@
+
+.links {
+    @include flex-just-betw;
+    & button {
+        width: 30%;
+        padding: .3em 0;
+        margin-top: 1.5em;
+        background-color: $background;
+        border: 1px solid $background;
+        border-radius: $border;
+        &:hover {
+            background-color: $background-dark;
+            color: $white;
+        }
+    }
+}
